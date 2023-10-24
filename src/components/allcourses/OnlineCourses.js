@@ -9,6 +9,7 @@ const [searchResH, setSearchResH]   = useState(true)
      useEffect(() => {
       if(sessionStorage.getItem("SearchRes")) {
         setItems(JSON.parse(sessionStorage.getItem("SearchRes")));
+        // console.log(items)
         setSearchResH(true)
       } else {
         setItems(online);   

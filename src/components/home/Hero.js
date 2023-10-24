@@ -10,11 +10,15 @@ export const Hero = () => {
   const navigate = useNavigate();
   const [searchT, setSearch] = useState("");
   const searchItem = () => {
-    const matches = online.filter(s => s.courseName.toLowerCase().includes(searchT.toLowerCase()));
     // console.log(matches)
-    sessionStorage.setItem("SearchRes", JSON.stringify(matches))
+    // sessionStorage.setItem("SearchRes", JSON.stringify(matches))
     document.getElementById('onlineCoursesSection').scrollIntoView();
   }
+  useEffect(() => {
+    const matches = online.filter(s => s.courseName.toLowerCase().includes(searchT.toLowerCase()));
+
+    sessionStorage.setItem("SearchRes", JSON.stringify(matches))
+  }, [searchT])
   return (
     <>
       <section className='hero'>
