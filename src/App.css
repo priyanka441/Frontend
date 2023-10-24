@@ -1,0 +1,200 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:white;
+}
+
+
+.container{
+  max-width: 85%;
+  margin: auto;
+}
+.flexSB{
+  display: flex;
+  justify-content: space-between;
+ 
+
+}
+.icon{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgba(255,255,255,0.3);
+  color:black;
+  transition: 0.5s;
+}
+
+.icon:hover{
+  cursor: pointer;
+  background-color:pink ;
+  color:#fff;
+}
+button{
+  border:none;
+}
+.row{
+  width: 50%;
+}
+ 
+ button{
+  padding:17px 30px;
+  background-color: pink;
+  color:pink;
+  font-weight: 600;
+  border:none;
+  margin:30px 10px 0 0;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0 24px 36px -11px rgba(0 0 0 /9%);
+} 
+button i{
+  margin-left: 20px;
+}
+button:hover{
+  box-shadow: none;
+  color:pink;
+
+}
+.primary-btn{
+  background-color:pink ;
+  color:black;
+
+}
+#heading{
+  text-align: center;
+  padding:40px 0;
+}
+#heading h3{
+  font-weight: 600;
+  letter-spacing: 1px;
+  color:pink;
+  text-transform: uppercase;
+
+
+}
+#heading h1{
+  font-size:45px;
+  margin:20px 0;
+  text-transform: capitalize;
+}
+p{
+  line-height:30px;
+  font-size:18px;
+  color:black;
+}
+.back{
+  background-image: url('https://img.freepik.com/free-photo/expressive-young-male-posing-studio_176474-98694.jpg?w=996&t=st=1697957457~exp=1697958057~hmac=c2f570ca85fbb957c0db559c93d77e6845f5e62cbadc6ef4d5de040631f6f7bb');
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  padding-top: 30%;
+  padding-right: 50px;
+  color:black;
+  text-align:center;
+}
+.back h1{
+  font-size: 100px;
+  font-weight:400;
+
+}
+.back h2{
+  font-weight: 500;
+  font-size:17px;
+  text-transform: uppercase;
+}
+.margin{
+  margin-top: 600.3px;
+
+
+}
+.grid{
+  margin-top:50px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap:30px;
+
+}
+.flex{
+  display: flex;
+}
+.grid2{
+
+ display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:30px;
+}
+
+.outline{
+  margin: 0;
+  box-shadow: none;
+  border:2px solid rgb(239, 243, 244);
+  width:100%;
+  transition: 0.5s;
+  background-color:rgb(222, 230, 231) ;
+ color:black;
+}
+.outline:hover{
+  background-color: pink;
+  color:black;
+}
+.grid3{
+
+  display: grid;
+   grid-template-columns: repeat(6,1fr);
+   grid-gap:10px;
+ }
+ .padding{
+  padding:80px 0;
+ }
+ .shadow{
+  box-shadow: 0 5px 25px -2px rgba(0 0 0 /6%);
+  background-color: white;;
+ }
+
+ 
+/* @media screen and (max-width: 768px) {
+  .grid2 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  .grid3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .back {
+    padding-top: 50%;
+  }
+  .margin {
+    margin-top: 85%;
+  }
+
+  /* You can add more responsive styling here */
+  @media screen and (max-width: 768px) {
+    .row {
+      width: 100%;
+    }
+  
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .grid2 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .grid3 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  } 
+ 
+

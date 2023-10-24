@@ -1,0 +1,90 @@
+ .login {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("https://img.freepik.com/free-photo/pastel-pink-vignette-concrete-textured-background_53876-129734.jpg?w=996&t=st=1698085615~exp=1698086215~hmac=7527264813c1f9a9f76cf2d9f080a92ad32c6ef648955c8b15efaec3165199c5");
+    background-size: cover;
+  }
+  .login h1{
+    text-align: center;
+  }
+  
+
+.ui.divider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ui.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button1{
+  background-color:rgb(163, 208, 231);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button1:hover {
+  background-color: pink;
+}
+
+p {
+  color:black;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.loginRegistrationButton{
+  position: absolute;
+  top:60px;
+  right:20px;
+  background-color: teal;
+  cursor: pointer;
+  border:none;
+  padding: 10px;
+  color:white;
+  border-radius: 10px;
+}
+   
+@media screen and (max-width: 768px) {
+  .login {
+    height: auto; /* Adjust height for smaller screens */
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-size: cover;
+  }
+}

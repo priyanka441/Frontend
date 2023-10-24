@@ -1,0 +1,113 @@
+.hero{
+    background-image: url('https://img.freepik.com/free-photo/blue-wall-background_53876-88663.jpg?w=360&t=st=1696950788~exp=1696951388~hmac=6413c39d1080ed71414cb3201faf7784580d42dad4594f450f6112c6ca409e16');
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    padding-top: 20%;
+    padding-right: 50px;
+    color:black;
+}
+p{
+    color:black;
+}
+
+.hero #heading h3{
+    color:black;
+
+}
+.hero #heading{
+    text-align: left;
+    margin:0;
+    padding:0;
+}
+
+.abc{
+    background-color: black;
+    color:pink;
+}
+.form1{
+     display:inline-block;
+    background-color: pink;
+    height:5px;
+    width:335px;
+    margin-top:10px;
+    cursor :pointer;
+}
+.hello{
+    margin-top:2%;
+    width:5px;
+    height:45px;
+    cursor :pointer;
+}
+.icon1 {
+   
+    
+   color:black;
+    background-color:white;
+    height:5px;
+    cursor :pointer;
+    width:10px;
+    margin-left:-5px;
+}
+
+
+/* @media screen and (max-width: 768px){
+    .margin{
+        height:40vh;
+    }
+    .hero{
+        background-position: right;
+        padding-top: 50%;
+        height:80vh;
+
+    }
+    .hero  .row{
+        width: 100%;;
+    }
+} */
+
+/* @media screen and (max-width: 768px) {
+    .hero {
+        background-attachment: scroll;
+        padding-top: 10%;
+        padding-right: 20px;
+    }
+
+    .hero #heading h3 {
+        font-size: 18px;
+    }
+
+    .abc {
+        background-color: pink;
+        color: black;
+    }
+} */
+/* .form1{
+    margin-top:10px;
+    border-radius: 2px;
+    width:300px;
+  background-color:pink;
+}
+.submitt{
+    display:inline;
+    margin-top: 5px;
+    */
+  
+@media screen and (max-width: 768px) {
+    .margin {
+      height: 40vh;
+    }
+    .hero {
+      background-position: right;
+      padding-top: 50%;
+      height: 80vh;
+    }
+    .hero .row {
+      width: 100%;
+    }
+  }

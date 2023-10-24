@@ -1,0 +1,147 @@
+/* Styles for .newletter adjusted for responsive design */
+.newletter {
+    background-color: pink;
+    margin-top: 50px; /* Adjusted for smaller screens */
+    padding: 30px 0 ; /* Adjusted for smaller screens */
+    color: black;
+  }
+  
+  .newletter .right, .newletter .left {
+    padding-right: 20px; /* Adjusted for smaller screens */
+  }
+  
+  .newletter h1 {
+    color: black;
+    font-size: 24px; /* Adjusted for smaller screens */
+    font-weight: 500;
+    margin-bottom: 10px; /* Adjusted for smaller screens */
+  }
+  
+  .newletter .right {
+    display: block; /* Adjusted for smaller screens */
+  }
+  
+  .newletter input {
+    width: 100%;
+    padding: 10px; /* Adjusted for smaller screens */
+    border: none;
+    outline: none;
+    height: 25px; /* Adjusted for smaller screens */
+  }
+  
+  .newletter i {
+    padding: 6px; /* Adjusted for smaller screens */
+    color: pink;
+    background-color: rgb(208, 217, 223);
+  }
+  
+  .submitz {
+   
+    margin-top: 5px;
+    height: 30px; /* Adjusted for smaller screens */
+    width: 80px; /* Adjusted for smaller screens */
+    margin-left: -13px; /* Adjusted for smaller screens */
+    background-color: rgb(165, 217, 247);
+    color:black;
+    padding:3px;
+  }
+  
+  /* Styles for the footer section adjusted for responsive design */
+  footer {
+    background-color: rgb(180, 220, 242);
+  }
+  
+  footer .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    footer .container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+  }
+  
+  footer .logo span {
+    color: black;
+    font-size: 12px; /* Adjusted for smaller screens */
+  }
+  
+  footer .logo p {
+    color: black;
+    margin: 20px 0 10px 0; /* Adjusted for smaller screens */
+  }
+  
+  footer .logo .icon {
+    background-color: pink;
+    color: black;
+    margin-right: 10px;
+  }
+  
+  footer h3 {
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+  
+  footer ul li {
+    margin-bottom: 15px; /* Adjusted for smaller screens */
+  }
+  
+  footer .link li::before {
+    content: "⟶";
+    color: black;
+    margin-right: 5px;
+  }
+  
+  footer .items {
+    margin-bottom: 20px; /* Adjusted for smaller screens */
+  }
+  
+  footer .items img {
+    width: 40px; /* Adjusted for smaller screens */
+    height: 40px; /* Adjusted for smaller screens */
+    border-radius: 5px;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  
+  footer .items span, footer .items i {
+    font-size: 10px; /* Adjusted for smaller screens */
+    color: black;
+    margin-right: 15px;
+  }
+  
+  footer h4 {
+    font-weight: 400;
+    margin-top: 5px;
+  }
+  
+  footer .last ul li {
+    display: flex;
+    margin-bottom: 30px; /* Adjusted for smaller screens */
+  }
+  
+  footer .last i {
+    width: 50px; /* Adjusted for smaller screens */
+    font-size: 18px; /* Adjusted for smaller screens */
+    color: black;
+  }
+  
+  .legal {
+    text-align: center;
+    padding: 20px 0; /* Adjusted for smaller screens */
+    color: grey;
+    background-color: #e9e9e9;
+  }
+  
+  .legal p {
+    font-size: 12px; /* Adjusted for smaller screens */
+  }
+  
+  .legal i {
+    color: pink;
+  }
+  
+ 
