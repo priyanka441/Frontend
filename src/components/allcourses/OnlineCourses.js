@@ -1,16 +1,35 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Title } from '../common/title/Title'
 import { online } from '../../dummydata'
 import './courses.css'
 
 export const OnlineCourses = () => {
+const [items, setItems] = useState([]);
+const [searchResH, setSearchResH]   = useState(true)
+     useEffect(() => {
+      if(sessionStorage.getItem("SearchRes")) {
+        setItems(JSON.parse(sessionStorage.getItem("SearchRes")));
+        setSearchResH(true)
+      } else {
+        setItems(online);   
+        setSearchResH(false);
+       }
+
+
+     })
+
+     
+
+  
   return (
   <>
-    <section className='online'>
+    <section id="onlineCoursesSection" className='online'>
         <div className='container'>
             <Title subtitle='COURSES' title='Browse Our Online Courses'/>
             <div className='content grid3'>
-            {online.map((val) => (
+
+            {
+         (items.length == 0 && searchResH ? <>No Results found</> : items.map((val) => (
                 <div className='box'>
                 <div className='img'>
                   <img src={val.cover} />
@@ -27,7 +46,7 @@ export const OnlineCourses = () => {
 
 
 
-            ))}
+            )))}
             </div>
 
             </div>
